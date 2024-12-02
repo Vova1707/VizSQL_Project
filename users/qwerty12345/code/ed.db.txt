@@ -1,0 +1,15 @@
+import sqlite3
+
+connection = sqlite3.connect('ed.db')
+cursor = connection.cursor()
+cursor.execute(CREATE TABLE IF NOT EXISTS Types (id INTEGER PRIMARY KEY, name TEXT))
+connection.commit()cursor.execute(CREATE TABLE IF NOT EXISTS Spaces (id INTEGER PRIMARY KEY, name TEXT))
+connection.commit()cursor.execute(CREATE TABLE IF NOT EXISTS dfgvbhnj (drfghj INTEGER PRIMARY KEY, FOREIGN KEY (drfghj) REFERENCES Spaces(id)))
+connection.commit()cursor.execute("DROP TABLE dfgvbhnj")
+connection.commit()cursor.execute("DROP TABLE dfgvbhnj")
+connection.commit()cursor.execute("DROP TABLE dfgvbhnj")
+connection.commit()cursor.execute("DROP TABLE dfgvbhnj")
+connection.commit()cursor.execute("DROP TABLE dfgvbhnj")
+connection.commit()cursor.execute("DROP TABLE dfgvbhnj")
+connection.commit()cursor.execute(CREATE TABLE IF NOT EXISTS rtgyhuj (fgvbhnjftgyhj INTEGER PRIMARY KEY, FOREIGN KEY (fgvbhnjftgyhj) REFERENCES Types(id)))
+connection.commit()

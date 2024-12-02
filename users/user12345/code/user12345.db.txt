@@ -1,0 +1,8 @@
+import sqlite3
+
+connection = sqlite3.connect('user12345.db')
+cursor = connection.cursor()
+cursor.execute(CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT NOT NULL))
+connection.commit()cursor.execute(CREATE TABLE IF NOT EXISTS product (id1 INTEGER PRIMARY KEY, FOREIGN KEY (id1) REFERENCES users(id)))
+connection.commit()cursor.execute('''INSERT INTO users VALUES (?, ?)''', [23456, 'dfghjk'])
+connection.commit()

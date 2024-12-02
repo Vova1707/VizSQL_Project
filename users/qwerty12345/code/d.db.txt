@@ -1,0 +1,8 @@
+import sqlite3
+
+connection = sqlite3.connect('d.db')
+cursor = connection.cursor()
+cursor.execute(CREATE TABLE IF NOT EXISTS abs (name INTEGER PRIMARY KEY, text TEXT))
+connection.commit()cursor.execute(CREATE TABLE IF NOT EXISTS aboba (abd INTEGER PRIMARY KEY, FOREIGN KEY (abd) REFERENCES abs(name)))
+connection.commit()cursor.execute('''INSERT INTO abs VALUES (?, ?)''', [123, ';ppp'])
+connection.commit()

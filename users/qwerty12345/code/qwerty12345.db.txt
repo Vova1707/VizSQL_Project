@@ -1,0 +1,7 @@
+import sqlite3
+
+connection = sqlite3.connect('qwerty12345.db')
+cursor = connection.cursor()
+cursor.execute(CREATE TABLE IF NOT EXISTS vtyhujik (ghnjmk INTEGER))
+connection.commit()cursor.execute("DROP TABLE vtyhujik")
+connection.commit()
